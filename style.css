@@ -1,0 +1,287 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: '8 bit'; 
+  src: url('OutlinePixel7.woff');
+}
+@font-face {
+  font-family: '8 bit2'; 
+  src: url('ComicoroRu_0.woff');
+}
+
+h1, h2, h3 {
+  font-family: '8 bit';
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.bit2 {
+  font-family: '8 bit2';
+  font-size: 30px;
+}
+header {
+  text-align: center;
+  font-size: 30px;
+}
+body {
+  background-color: #83C5E9;
+  background-image: url(https://www.funnyart.club/uploads/posts/2022-01/1641490203_47-www-funnyart-club-p-psikhodelicheskie-foni-49.jpg);
+  margin: 6em;
+
+}
+.main-content {
+  margin: 10px;
+  padding: 20px;
+  padding-top: 5px;
+  background-color: #F5F5DC;
+}
+
+.oldbutton {
+  font-family: inherit;
+  border: none;
+  outline-offset: -4px;
+  background: hsl(0deg 0% 75%);
+  box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 30px;
+}
+
+button:active {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #292929, inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background: repeating-radial-gradient(red 55%, white 56%);
+}
+
+.btn-class-name {
+  --primary: 255, 90, 120;
+  --secondary: 150, 50, 60;
+  width: 60px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  outline: 10px solid rgb(var(--primary), .5);
+  border-radius: 100%;
+  position: relative;
+  transition: .3s;
+}
+
+.btn-class-name .back {
+  background: rgb(var(--secondary));
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-class-name .front {
+  background: linear-gradient(0deg, rgba(var(--primary), .6) 20%, rgba(var(--primary)) 50%);
+  box-shadow: 0 .5em 1em -0.2em rgba(var(--secondary), .5);
+  border-radius: 100%;
+  position: absolute;
+  border: 1px solid rgb(var(--secondary));
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  transform: translateY(-15%);
+  transition: .15s;
+  color: rgb(var(--secondary));
+}
+
+.btn-class-name:active .front {
+  transform: translateY(0%);
+  box-shadow: 0 0;
+}
+
+.dontclick {
+  font-family: '8 bit';
+  padding: 10px;
+  text-align: center;
+}
+
+.redbutton {
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.prize {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.spinprize {
+  padding: 50px;
+}
+
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+
+.wheel{
+  font-family: "8 bit2";
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.mainbox{
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.mainbox:after{
+  position: absolute;
+  content: '';
+  width: 32px;
+  height: 32px;
+  background: url('pngwing.com (1).png') no-repeat;
+  background-size: 32px;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.box{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  overflow: hidden;
+  transition: all ease 5s;
+}
+
+span{
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
+}
+.span1{
+  clip-path: polygon(0 92%, 100% 50%, 0 8%);
+  background-color: #fffb00;
+  top: 120px;
+  left: 0;
+}
+.span2{
+  clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+  background-color: #ff4fa1;
+  top: 120px;
+  right: 0;
+}
+.span3{
+  clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+  background-color: #ffaa00;
+  bottom: 0;
+  left: 120px;
+}
+.span4{
+  clip-path: polygon(50% 100%, 92% 0, 8% 0);
+  background-color: #22ff00;
+  top: 0;
+  left: 120px;
+}
+
+.box1 .span3 b{
+   transform: translate(-50%, -50%) rotate(-270deg);
+}
+.box1 .span1 b,
+.box2 .span1 b{
+  transform: translate(-50%, -50%) rotate(185deg);
+}
+.box2 .span3 b{
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.box1 .span4 b,
+.box2 .span4 b{
+  transform: translate(-50%, -50%) rotate(-85deg);
+}
+
+span b{
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.box2{
+  width: 100%;
+  height: 100%;
+  transform: rotate(-135deg);
+}
+
+.spin{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background-color: #001aff;
+  color: #fff;
+  box-shadow: 0 5px 20px #000;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+}
+.spin:active{
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+}
+
+.mainbox.animate:after{
+  animation: animateArrow 0.7s ease infinite;
+}
+@keyframes animateArrow{
+  50%{
+    right: -40px;
+  }
+}
+
+.hover { 
+display: none;
+}
+
+a {
+cursor:pointer;
+}
+
+a:hover + div { 
+display: block; 
+font-size: 20px; 
+}
