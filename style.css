@@ -5,11 +5,11 @@ html {
 
 @font-face {
   font-family: '8 bit'; 
-  src: url('fonts/OutlinePixel7.woff');
+  src: url('/home/student068/herobrinsk/fonts/OutlinePixel7.woff');
 }
 @font-face {
   font-family: '8 bit2'; 
-  src: url('fonts/ComicoroRu_0.woff');
+  src: url('/home/student068/herobrinsk/fonts/ComicoroRu_0.woff');
 }
 
 h1, h2, h3 {
