@@ -5,11 +5,11 @@ html {
 
 @font-face {
   font-family: '8 bit'; 
-  src: url('/home/student068/herobrinsk/fonts/OutlinePixel7.woff');
+  src: url('fonts/OutlinePixel7.woff');
 }
 @font-face {
   font-family: '8 bit2'; 
-  src: url('/home/student068/herobrinsk/fonts/ComicoroRu_0.woff');
+  src: url('fonts/ComicoroRu_0.woff');
 }
 
 h1, h2, h3 {
@@ -164,7 +164,7 @@ button:active {
   content: '';
   width: 32px;
   height: 32px;
-  background: url('pngwing.com (1).png') no-repeat;
+  background: url('images/pngwing.com (1).png') no-repeat;
   background-size: 32px;
   right: 14px;
   top: 50%;
